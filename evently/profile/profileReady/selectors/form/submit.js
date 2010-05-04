@@ -1,7 +1,7 @@
 function() {
   var profile = $$("#profile").profile;
   // $.log("profile", profile, this);
-  var texta = $("textarea[name=body]", this);
+  var texta = $("input[name=body]", this);
   var newTask = {
     body : texta.val(),
     type : "task",
