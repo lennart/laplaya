@@ -1,5 +1,5 @@
-<li data-id="{{{id}}}" {{#state}}class="{{state}}"{{/state}}>
-  <div class="avatar">
+<li data-id="{{{id}}}" {{#solved}}class="resolved"{{/solved}}{{^solved}}class="unresolved"{{/solved}}>
+  <div class="avatar" >
     <img src="{{{avatar_url}}}"/>
     <br/>
     <a class="name" href="#/users/{{{name_uri}}}">{{name}}</a>

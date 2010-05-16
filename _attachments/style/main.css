@@ -97,14 +97,22 @@ div#profile {
   font-size:0.78em;
 }
 
-#tasks li div.replies li {
+#tasks li ul.replies li {
   font-size:0.84em;
   background:none;
   border:1px solid #fff;
 }
 
-#tasks li div.replies {
+#tasks li ul.replies {
   margin:2px;
+}
+
+#tasks li ul.replies li.unresolved {
+  border: 1px solid red;
+}
+
+#tasks li ul.replies li.resolved {
+  border: 1px solid green;
 }
 
 div.avatar {
@@ -127,5 +135,10 @@ div.avatar img {
   padding:0;
   width : 40px;
   height : 40px;
+}
+
+.replies div.avatar img {
+  width : 25px;
+  height : 25px;
 }
 
