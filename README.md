@@ -4,8 +4,17 @@ This is an evil fork of [jchris' taskr](http://github.com/jchris/taskr). The who
 
 ## Features 
 
+_From Taskr_
+
 * Realtime group updates across ad-hoc clusters.
 * Twitter-style @names and #hashtag browsing.
+
+_New_
+
+* adding tracks to sampler in the style of `artist - title`
+* highlighting of resolved tracks
+* playing resolved tracks through soundmanager2
+
 
 [Introductory screencast of taskr here.](http://www.youtube.com/watch?v=qJbfRZz6qNY)
 
