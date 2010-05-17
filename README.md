@@ -28,6 +28,14 @@ jchris is working on some code to make [sharing CouchApps a breeze](http://githu
 
 You can get help at the [CouchApp mainling list](http://groups.google.com/group/couchapp).
 
+## Giant's shoulders
+
+* the idea is taken from [playlick](http://playlick.com) 
+* large parts of the implementation taken from [taskr](http://github.com/jchris/taskr). 
+* crossbrowser sound playback through [soundmanager2](http://github.com/scottschiller/SoundManager2)
+* content resolving through [playdar](http://playdar.org) and [playdar.js](http://playdarjs.org) as a javascript client 
+* persistence powered by the _"I want to think about apps not schemas"_-database [couchdb](http://couchdb.apache.org)
+
 ## Contribute
 
 since this is just a fork of taskr, it'll be updated with the latest features of evently as the development progresses. I'll need to rewrite or enhance the "reply" feature of taskr to give it a kind-of _playlist_ feeling.
