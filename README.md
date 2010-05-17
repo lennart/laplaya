@@ -19,6 +19,7 @@ _New_
 [Introductory screencast of taskr here.](http://www.youtube.com/watch?v=qJbfRZz6qNY)
 
 ## Running
+__You need at least CouchDB 0.11 to get this couchapp up and running__
 
 Right now the easiest way to run this is to clone and deploy the checkout with [CouchApp](http://github.com/couchapp/couchapp).
 
