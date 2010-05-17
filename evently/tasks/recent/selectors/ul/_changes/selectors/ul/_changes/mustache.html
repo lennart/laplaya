@@ -4,6 +4,9 @@
     <br/>
     <a class="name" href="#/users/{{{name_uri}}}">{{name}}</a>
   </div>
+  {{#solved}}
+  <a href="#/player/{{sid}}">Play</a>
+  {{/solved}}
   <div class="body">{{{body}}}</div>
   <div class="react">
     <a target="_blank" href="{{{futon_path}}}">&#8618;</a>
