@@ -1,0 +1,13 @@
+<ul>
+  {{#results}}
+  <li id="{{{sid}}}">
+    <span>{{artist}}</span> - <span>{{track}}</span>
+  </li>
+  {{/results}}
+  {{^results}}
+  No Results yet, sorry
+  {{/results}}
+</ul>
+<form>
+  <input type="submit" value="Add">
+</form>
