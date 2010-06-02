@@ -1,10 +1,10 @@
 function() {
   var profile = $$("#profile").profile;
   // $.log("profile", profile, this);
-  var texta = $("input[name=body]", this);
+  var title = $("input[name=title]", this);
   var newTask = {
-    body : texta.val(),
-    type : "task",
+    title : title.val(),
+    type : "list",
     created_at : new Date(),
     authorProfile : profile
   };
@@ -12,7 +12,7 @@ function() {
   // maybe we need a better way to support shared state?
   $$(this).app.db.saveDoc(newTask, {
     success : function() {
-      texta.val('');
+      title.val('');
     }
   });
   return false;

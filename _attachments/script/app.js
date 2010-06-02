@@ -27,6 +27,7 @@ $("#account").evently("account", app);
 $("#player").bind("player", function(e, params) {
     
   Playdar.player.play_stream(params.sid);
+  $("#tasks").trigger("recent");
     });
 $("#player").pathbinder("player", "/player/:sid");
 // trigger the profile widget's events corresponding to the account widget
@@ -76,6 +77,7 @@ onResults: function (response, lastPoll) {
         // extra options for soundManager
         }
         );
+    $$("#playdar").playdar = Playdar;
 
 
 });

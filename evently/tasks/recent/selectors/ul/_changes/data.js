@@ -3,7 +3,7 @@ function(r) {
   var app = $$(this).app;
   return {
     avatar_url : v.authorProfile && v.authorProfile.gravatar_url,
-    body : $.linkify($.mustache.escape(r.value.body)),
+    title : $.linkify($.mustache.escape(r.value.title)),
     name : v.authorProfile && v.authorProfile.name,
     name_uri : v.authorProfile && encodeURIComponent(v.authorProfile.name),
     futon_path : "/_utils/document.html?"+[app.db.name,r.id].map(encodeURIComponent).join('/'),

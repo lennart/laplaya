@@ -111,6 +111,15 @@ div#profile {
   border: 1px solid red;
 }
 
+#tasks li ul.replies li .title {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+#tasks li ul.replies li .artist {
+  font-family: Georgia, serif
+}
+
 #tasks li ul.replies li.resolved {
   border: 1px solid green;
 }

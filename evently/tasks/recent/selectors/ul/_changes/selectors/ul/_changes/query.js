@@ -1,12 +1,10 @@
 function() {
   var li = $(this).parents("li");
-  var reply_id = li.attr("data-id");
+  var list_id = li.attr("data-id");
   return {
-    view : "task-replies",
-    limit : 25,
-    startkey : [reply_id, {}],
-    endkey : [reply_id],
-    descending : true,
+    view : "tracks",
+    startkey : [list_id],
+    endkey : [list_id,{}],
     type : "newRows"
   }
 }

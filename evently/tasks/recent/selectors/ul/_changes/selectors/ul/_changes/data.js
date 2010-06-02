@@ -1,6 +1,7 @@
 function(r) {
   var v = r.value;
   var widget = $$(this);
+  var node = $(this);
   var app = widget.app;
 
   var qid = v.qid;
@@ -18,7 +19,11 @@ function(r) {
           onstop: function () {
           // Scope of 'this' is a SM Sound object
           alert('Stopped playing sound: ' + this.sID);
-        }
+          },
+          onfinish: function () {
+          alert('Stopped before finishing');
+            $("#player").trigger("player",{ sid : node.next().attr("data-id").val()});
+          }
         });
         $("#"+r.id).html("resolved");
 
@@ -30,10 +35,11 @@ function(r) {
 }
 
 },qid);
-Playdar.client.resolve(v.query.artist,v.query.track,null,qid);
+Playdar.client.resolve(v.artist,v.track,null,qid);
 var stash = {
+title : v.track,
+        artist : v.artist,
 avatar_url : v.authorProfile && v.authorProfile.gravatar_url,
-             body : $.linkify($.mustache.escape(r.value.body)),
              name : v.authorProfile && v.authorProfile.name,
              name_uri : v.authorProfile && encodeURIComponent(v.authorProfile.name),
              futon_path : "/_utils/document.html?"+[app.db.name,r.id].map(encodeURIComponent).join('/'),
